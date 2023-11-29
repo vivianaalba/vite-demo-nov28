@@ -21,3 +21,8 @@ export function fetchRandomCatImage() {
             catImageContainer.appendChild(catImage);
         }
     })
+        // catch and express the error code
+        .catch((error) => {
+            console.error('Error fetching cat image:' , error);
+        });
+    }
